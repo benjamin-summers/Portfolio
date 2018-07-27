@@ -1,0 +1,502 @@
+/*
+    #UNIVERSAL STYLES
+    #NAVBAR STYLES
+    #SPAN#SECTION1 STYLES
+    #SPAN#SECTION2 STYLES
+    #SPAN#SECTION3 STYLES
+    #CSS3 KEYFRAME DECLERATIONS
+    #MEDIA QUERIES
+*/
+
+/*################################## UNIVERSAL STYLES ################################*/
+
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+i.fa.fa-bolt {
+    text-align: center;
+    color: yellow;
+    position: relative;
+    margin-top: 10px;
+    animation: bounce 1s infinite;
+    -webkit-animation:bounce 1s infinite;
+    -moz-animation:bounce 1s infinite;
+    -ms-animation:bounce 1s infinite;
+    -o-animation:bounce 1s infinite;
+}
+
+i.fa.fa-bolt:hover {
+    cursor: pointer;
+}
+
+/*################################## NAVBAR STYLES ################################*/
+
+nav ul {
+    list-style-type: none;
+    position: fixed;
+    right: 10px;
+    margin-left: 20px;
+}
+
+nav ul>li {
+    font-size: 20px;
+    margin-right: 20px;
+    color: white;
+    display: inline-block;
+    border-bottom: 3px solid darkslategray;
+}
+
+nav ul>li:hover {
+    border-bottom: 5px solid darkslategray;
+    cursor: pointer;
+}
+
+/*################################## SPAN#SECTION1 STYLES ################################*/
+
+span#section1 div {
+    margin: 0;
+    padding: 0;
+    display: table;
+    height: 100%;
+    background-image: url('/images/fire-3547555_1920.jpg');
+    width: 100%;
+}
+
+span#section1 div>div {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+span#section1 div>h1 {
+    font-size: 30px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    font-family: 'Faster One', cursive;
+    color: white;
+    opacity: 0.7;
+    text-stroke: 1px #dbb200;
+    -webkit-text-stroke: 1px #dbb200;
+    -moz-text-stroke: 1px #dbb200;
+    -ms-text-stroke: 1px #dbb200;
+    -o-text-stroke: 1px #dbb200;
+    text-shadow: 5px 5px black;
+    
+}
+
+span#section1 div>ul.social-icons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+span#section1 div>ul.social-icons li {
+    display: inline-block;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+span#section1 div>ul.social-icons li>a {
+    padding: 12px;
+    border-radius: 20px;
+    font-size: 8px;
+    background-color: lightcoral;
+    border: 1px soild white;
+}
+
+span#section1 div>ul.social-icons li>a {
+    color: white;
+}
+
+span#section1 div>ul.social-icons li>a:hover {
+    animation: bubblePop 1s;
+    -webkit-animation: bubblePop 1s;
+    -moz-animation: bubblePop 1s;
+    -ms-animation: bubblePoP 1s;
+    -o-animation: bubblePop 1s;
+    color: #dbb200;
+    transition: color 2s;
+}
+
+
+span#section1 div>ul.code-icons {
+    font-size: 50px;
+    list-style-type: none;
+}
+
+span#section1 div>ul.code-icons li {
+    display: inline-block;
+}
+
+span#section1 div>p {
+    color: white;
+    font-size: 20px;
+    font-family: 'merianda', cursive;
+}
+
+span#section1 div>div>img.car {
+    margin-top: 120px;
+    margin-bottom: 30px;
+    position: relative;
+    animation: startCar 1.5s infinite;
+    -webkit-animation: startCar 1.5s infinite;
+    -moz-animation: startCar 1.5s infinite;
+    -ms-animation: startCar 1.5s infinite;
+    -o-animation: startCar 1.5s infinite;
+}
+
+/*################################## SPAN#SECTION2 STYLES ################################*/
+
+span#section2 div {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #dbb200;
+    display: table;
+}
+
+
+span#section2 div>div {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+span#section2 div>h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Faster One', cursive;
+    text-stroke: 1px darkred;
+    -webkit-text-stroke: 1px darkred;
+    -moz-text-stroke: 1px darkred;
+    -ms-text-stroke: 1px darkred;
+    -o-text-stroke: 1px darkred;
+}
+
+span#section2 div>p {
+    color: darkred;
+    font-size: 10px;
+    list-style-type: none;
+    text-align: center;
+    font-family: 'Merienda', cursive;
+}
+
+span#section2 div>ul {
+    color: darkred;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+span#section2 div>ul>li {
+    display: inline-block;
+    font-size: 10px;
+}
+
+span#section2 h5 {
+    color: darkred;
+    font-size: 15px;
+}
+
+.graphic-design li>img {
+    width: 100px;
+    height: 100px;
+}
+
+/*################################## SPAN#SECTION3 STYLES ################################*/
+
+span#section3 div {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/fire-3547555_1920.jpg');
+    display: table;
+}
+
+span#section3 div>div {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+span#section3 div>div>ul.cards {
+    list-style-type: none;
+    width: 100%;
+    padding: 0px;
+}
+
+span#section3 div>div>ul.cards li {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    height: 350px;
+    background-color: darkred;
+}
+
+span#section3 div>div>ul.cards li>img {
+    height: 80px;
+    width: 100%;
+}
+
+span#section3 div>div>ul.cards li>h3 {
+    font-family: 'Faster One', cursive;
+    color: darkred;    
+    font-size: 15px;
+    text-stroke: 0.5px #dbb200;
+    -webkit-text-stroke: 0.5px #dbb200;
+    -moz-text-stroke: 0.5px #dbb200;
+    -ms-text-stroke: 0.5px #dbb200;
+    -o-text-stroke: 0.5px #dbb200;
+}
+
+h4 {
+    color: #dbb200;
+}
+
+span#section3 div>div>ul.cards li>p {
+    font-family: 'Merienda', cursive;
+    font-size: 13px;
+    color: #dbb200;
+}
+
+span#section3 div>div>ul.cards li>ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+span#section3 div>div>ul.cards li>ul>li {
+    margin: 0px;
+    height: 20px;
+    width: auto;
+    font-size: 25px;
+}
+
+i.fa.fa-map-marker {
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+i.fa.fa-map-marker:hover {
+    cursor: pointer;
+    transform: rotate(0deg);
+}
+
+.i-one, .i-two, .i-three, .i-four, .i-five, .i-six {
+    opacity: 0;
+}
+
+/*################################## CSS3 KEYFRAMES ################################*/
+
+@-webkit-keyframes startCar {
+    0%    { left: 0% }
+    5%   { left: 2.5% }
+    10%   { bottom: 5% }
+    15%   { left: 7.5% }
+    20%  { left: 10% }
+    25%   { left: 12.5% }
+    30%    { left: 15% }
+    35%    { left: 20% }
+    40%    { left: 22.5% }
+    45%    { left: 25% }
+    50%    { left: 27.5% }
+    55%    { left: 30% }
+    60%    {left: 32.5%}
+    65%    {left: 35%}
+    70%    {left: 37.5%}
+    75%    {left: 40%}
+    80%    {left: 42.5%}
+    85%    {left: 45%}
+    90%    {left: 47.5%}
+    95%    {left: 48%}
+    100%    {display: none}
+}
+
+@-webkit-keyframes bubblePop {
+    0%    { padding: 20px }
+    20%    { padding: 10px }
+    30%    { padding-top: 15px; padding-bottom: 15px; padding-left: 20px; padding-right: 20px;}
+}
+
+@-webkit-keyframes colorChange {
+  100%       { color: #dbb200; }
+}
+
+@-webkit-keyframes bounce {
+  0%       { bottom:5px; }
+  25%, 75% { bottom:15px; }
+  50%      { bottom:20px; }
+  100%     {bottom:0;}
+}
+
+/*################################## MEDIA QUERIES ################################*/
+
+@media only screen and (min-width: 350px) {
+    span#section1 div>ul.social-icons li>a {
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 11px;
+    background-color: lightcoral;
+    border: 1px soild white;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    span#section1 div>ul.social-icons li>a {
+    padding: 20px;
+    padding-top: 25px;
+    border-radius: 40px;
+    font-size: 16px;
+    }
+    span#section2 div>p {
+    color: darkred;
+    font-size: 15px;
+    list-style-type: none;
+    text-align: center;
+    font-family: 'Merienda', cursive;
+    }
+    span#section2 div>ul>li {
+    display: inline-block;
+    font-size: 25px;
+    }
+    .graphic-design li>img {
+    width: 200px;
+    height: 200px;
+    }
+    
+    span#section3 div>div>ul.cards li>img {
+    height: 80px;
+    width: 100%;
+    }
+    
+    span#section3 div>div>ul.cards li {
+    width: 42%;
+    height: 350px;
+    margin: 10px;
+    }
+    
+    span#section3 div>div>ul.cards li>p {
+    font-size: 12px;
+    }    
+    
+
+}
+
+
+@media only screen and (min-width: 907px) {
+    span#section1 div>ul.social-icons li>a {
+    padding: 20px;
+    padding-top: 25px;
+    border-radius: 40px;
+    font-size: 16px;
+    }
+    span#section2 div>p {
+    color: darkred;
+    font-size: 15px;
+    list-style-type: none;
+    text-align: center;
+    font-family: 'Merienda', cursive;
+    }
+    span#section2 div>ul>li {
+    display: inline-block;
+    font-size: 25px;
+    }
+    .graphic-design li>img {
+    width: 200px;
+    height: 200px;
+    }
+    
+    span#section3 div>div>ul.cards li>img {
+    height: 80px;
+    width: 100%;
+    }
+    
+    span#section3 div>div>ul.cards li {
+    width: 42%;
+    height: 350px;
+    margin: 10px;
+    }
+   
+    
+    span#section3 div>div>ul.cards li>p {
+    font-size: 12px;
+    }
+    
+}
+
+@media only screen and (min-width: 1222px) {
+
+    span#section3 div>div>ul.cards {
+    list-style-type: none;
+    width: 100%;
+    padding: 0px;
+    }
+
+    span#section3 div>div>ul.cards li {
+        display: inline-block;
+        width: 30%;
+        margin-top: 20px;
+        height: 355px;
+        background-color: darkred;
+    }
+
+    span#section3 div>div>ul.cards li>img {
+        height: 100px;
+        width: 100%;
+    }
+
+    span#section3 div>div>ul.cards li>h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        color: #dbb200;
+        font-size: 15px;
+    }
+
+    span#section3 div>div>ul.cards li>p {
+        font-size: 11px;
+    }
+
+    span#section3 div>div>ul.cards li>ul {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    span#section3 div>div>ul.cards li>ul>li {
+        margin: 0px;
+        height: 20px;
+        width: auto;
+        font-size: 25px;
+    }
+
+}
+
+@media only screen and (min-width: 1279px) {
+    
+    .graphic-design li>img {
+        width: 250px;
+        height: 250px;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
