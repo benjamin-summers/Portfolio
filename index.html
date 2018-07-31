@@ -4,7 +4,6 @@
     <link href="https://fonts.googleapis.com/css?family=Faster+One|Galada|Merienda" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -13,9 +12,9 @@
 
 <nav>
     <ul>
-        <li onClick="document.getElementById('section1').scrollIntoView();">home</li>
-        <li onClick="document.getElementById('section2').scrollIntoView();">skills</li>
-        <li onClick="document.getElementById('section3').scrollIntoView();">work</li>
+        <li onClick="document.getElementById('section1').scrollIntoView({behavior: 'smooth'});">home</li>
+        <li onClick="document.getElementById('section2').scrollIntoView({behavior: 'smooth'});">skills</li>
+        <li onclick="document.getElementById('section3').scrollIntoView({behavior: 'smooth'});">work</li>
     </ul>
 </nav>
 
@@ -23,7 +22,7 @@
 
 
 <!-------------------------- SPAN#SECTION1 ------------------------->
-<span id="section1">
+<div id="section1">
     <div>
        <div>
             <h1>Benjamin Summers <br /> Web Dev</h1>
@@ -37,15 +36,15 @@
             <img class="car" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANdSURBVGhD7ZlLTBNBGMcHBTno0YuvmIg8AiUitd1iH9JKX0K7UFukkIJwAAzSGIhBOBkPXjyIBokauBi9cfQZYjQxRm8mXFAQDxDBRBPhIIlK+vntsl36mG0LLWnB/Se/pG32+2b+89qZKZElS5YsWbJkUaS2OquRe3EYZqqq84WQzBRjdX5grCzEQ21hbwkhSUtjZ0sZCztEabA1LM47jNnJCCHxhQETtIpHgsmHhZCkxVicD2hlRIKNNy6ExFdajFidj2hlRIJ1eyOERCugJX2hjBoLFoZMxcDhMldRE3Kky8hUKTn4WUH6RErIJT4J6AlI0VOloSbk0LPnXnv8A+1SjDRYrgV0pBUp4AuKofUYmSkmuhkFAZESssgnoRkIEsvI6YZWcPsHwmi42Ac3fbUwaT8k5kAjfwMG0sgXJqFNN9LvMIHWUQ8auwt7wAtGd/MqnhZgO3tFA+2d3TDm1sJP425qHjQzD0qSwxdIkdrKPqRVPBI08mpDRq6fr+cTFJRrwFjfEtb6OHzgalsTvHMUwYphBzU+FDRTzBdIkcrsNGAln3CrEoe2xj1tqGviGnEu+BuafcbY2DMpM+Lr6oWRRivMmfdSY6SIN7xC5fH3X+HKOusfiFpQkjbSVueA5y4lLFfuoj4bD+yRl7GGV6hSbuSGzwX3dUfhY1k2LKnpz6wHfuLryHRAT54it/FzNy75duyt/FCTKTcyr8wSA2IZWdLuhO/abPH7ij4Lvp7MieKXTnouobE/aGyKMzlhP/x21GuBu17bY97kKZLNVxa1ISMLx9cCpIx8qsgFY+ER6FIcEH/7hqYMhXlRVCK9pfvCTCdCqMnfFWTshxLrVkZg9hiBL4oUGRlX7eErmYiRIH7F/rAcybCiIwHQkdq0GOFYb6/EAntrVjYSJBOGFi4IzqSNTGlywZToZC/Kg8vpmOypXn6XYy2/q++YzVl+t80LMXKL8qKufGtuUbblppG+jW+E9zWFmb+NlzpYmTzNwHb0iKY6LqwerBYz9WC1kaPuoI+FSdtBMQea4Ca4ly9MQmk9s2fc5UPoVRDHlr0OihQ+vDUv6CKVFiObcWWKrZPoJfagEJK0VFZHSSKX2CdsNSohJL40FoeNmiiczP9bQZYsWbJkyfr/RMg/Mxn3QWOxvosAAAAASUVORK5CYII=">
             
             <p class="about-me">About Me</p>
-            <i class="fa fa-bolt fa-2x" onClick="document.getElementById('section2').scrollIntoView();"></i>
+            <i class="fa fa-bolt fa-2x" onClick="document.getElementById('section2').scrollIntoView({behavior: 'smooth'});"></i>
        </div>
     </div>
-</span>
+</div>
 <!--------------------------- END SPAN#SECTION1 -------------------------->
 
 
 <!-------------------------- SPAN#SECTION2 ------------------------->
-<span id="section2">
+<div id="section2">
     <div>
          <div>
             <h2>About Me</h2>
@@ -83,15 +82,15 @@
                  <li><img src="images/laminate.png"></li>
              </ul>
              <p>My Work</p>
-             <i class="fa fa-bolt fa-2x" onClick="document.getElementById('section3').scrollIntoView();"></i>
+             <i class="fa fa-bolt fa-2x" onClick="document.getElementById('section3').scrollIntoView({behavior: 'smooth'});"></i>
          </div>
     </div>
-</span>
+</div>
 <!-------------------------- END SPAN#SECTION2 ------------------------->
 
 
 <!-------------------------- SPAN#SECTION3 ------------------------->        
-<span id="section3">
+<div id="section3">
     <div>
         <div>
             <ul class="cards">
@@ -173,14 +172,14 @@
             </ul>
         </div>
     </div>
-</span>
+</div>
 <!-------------------------- END SPAN#SECTION3 ------------------------->
 
     
     
    <!------------------- SCRIPTS -------------------->
-   
-   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         
         $('i.fa.fa-map-marker.one').click( function() {
@@ -214,8 +213,8 @@
         })
         
         $(document).ready(function() { 
-            var color1 = Math.floor(Math.random() * 255);
-            var color2 = Math.floor(Math.random() * 255);
+            var color1 = Math.floor(Math.random() * 115);
+            var color2 = Math.floor(Math.random() * 215);
             var color3 = Math.floor(Math.random() * 255);
             var color4 = Math.floor(Math.random() * 155);
             var color5 = Math.floor(Math.random() * 190);
@@ -237,7 +236,7 @@
             
         });
     </script>
-    
+
     
    <!------------------- END SCRIPTS ------------------->    
     
